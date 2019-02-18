@@ -1,7 +1,8 @@
 //C:\Users\User\TelegramBot\bot
-require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
-    res.end('')
-});
+var http = require("http");
+setInterval(function() {
+    http.get("http://n-telegram-bot.herokuapp.com");
+}, 300000); 
 const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
