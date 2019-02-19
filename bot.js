@@ -1,7 +1,7 @@
 //C:\Users\User\TelegramBot\bot
-var http = require("http");
+var k=0;
 setInterval(function() {
-    http.get("http://n-telegram-bot.herokuapp.com");
+    k++;
 }, 300000); 
 const TelegramBot = require('node-telegram-bot-api');
 
